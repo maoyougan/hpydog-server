@@ -16,13 +16,15 @@ Starting MySQL
  最后，采用brew安装mysql完美解决，安装教程：‘https://blog.csdn.net/w605283073/article/details/80417866’
 
  ## 常用mysql命令
-
+```
   启动mysql服务
   mysql.server status  查看mysql服务状态
   mysql.server.restart 重启mysql服务
   mysql -u root -p 连接数据库，同时可进入mysql命令行作用域
+  ```
 
   每行命令都是以‘;’结尾，否则不会执行
+  ```
   show databases;  列举所有数据库
   use mysql; show tables; 列举名为mysql的数据库里所有的表
   create tabel tabelName; 创建表
@@ -30,6 +32,7 @@ Starting MySQL
   select * from tableName 查询tableName里所有消息记录
   insert into tableName values('字段1的值','字段2的值','字段3的值')
   update tableName set attName='new value' where keyName='keyValue' 修改某属性
+  ```
   
 
  ## 解惑
