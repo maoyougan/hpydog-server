@@ -1,6 +1,6 @@
 # 项目搭建说明
 
-本项目是对koa的初尝试，安装之前，利用了koa-genarator快速生成，之后发现，因其包含了模板部分，若项目想要前后端彻底分离，大可按照以下教程自己搭建“https://juejin.im/post/5bad9b1af265da0ae80120fe”，整个项目会轻便很多
+本项目是对koa的初尝试，安装之前，利用了koa-genarator快速生成，之后发现，因其包含了模板部分，若项目想要前后端彻底分离，大可按照以下教程自己搭建(https://juejin.im/post/5bad9b1af265da0ae80120fe)，整个项目会轻便很多
 
 ## 项目搭建
 
@@ -13,7 +13,7 @@
 本项目采用mac开发，自行下载mysql.dmg镜像文件解压安装，发现连不上，报错'Unhandled rejection SequelizeConnectionError: Client does not support authentication protocol requested by server'，猜测应该是mysql安装配置的问题，查询解决方案无果后，决定重新安装，此次下载tgz压缩包类型，发现不会安装.... 参考教程‘https://blog.csdn.net/cin_ie/article/details/70257099’，在启动mysql.server时报错‘support-files/mysql.server: line 239: my_print_defaults: command not found
 Starting MySQL
  ERROR! Couldn't find MySQL server (/usr/local/mysql/bin/mysqld_safe)’，估计是安装路径啥的需要另行更改，但确实不知道怎么改……
- 最后，采用brew安装mysql完美解决，安装教程：‘https://blog.csdn.net/w605283073/article/details/80417866’
+ 最后，采用brew安装mysql完美解决，安装教程：(https://blog.csdn.net/w605283073/article/details/80417866)
 
  ## 常用mysql命令
 ```
@@ -49,5 +49,5 @@ Starting MySQL
 
 首先安装koa-static依赖，再在app.js里做如下处理：
  app.use(require('koa-static')(path.join(__dirname, '/public')))
- 即可通过：http://localhost:3000/images/apple.png方式访问
+ 即可通过：（http://localhost:3000/images/apple.png方式访问）
  访问路径省去了跟目录，直接由path模块去解析
