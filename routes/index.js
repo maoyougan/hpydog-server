@@ -1,5 +1,5 @@
 const Router = require('koa-router')
-const UserController = require('../controller/user')
+const UserInfoController = require('../controller/userInfo')
 const ShopInfoController = require('../controller/shopInfo')
 
 const router = new Router({
@@ -7,7 +7,7 @@ const router = new Router({
 })
 
 //测试接口
-router.get('/test', UserController.userInfo)
+router.get('/test', UserInfoController.userInfo);
 
 /**
  * 店铺相关接口
@@ -15,4 +15,10 @@ router.get('/test', UserController.userInfo)
 // router.post('/ceateShop', ShopInfoController.create);
 // 获取店铺信息
 router.get('/getShopInfo', ShopInfoController.getShopInfo);
+
+/**
+ * 用户信息相关接口
+*/
+
+router.get('/getAllUserInfo', UserInfoController.getAllUserInfo)
 module.exports = router

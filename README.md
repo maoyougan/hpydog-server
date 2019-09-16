@@ -17,14 +17,20 @@ Starting MySQL
 
  ## 常用mysql命令
 
- 每行命令都是以‘;’结尾，否则不会执行
+  启动mysql服务
+  mysql.server status  查看mysql服务状态
+  mysql.server.restart 重启mysql服务
+  mysql -u root -p 连接数据库，同时可进入mysql命令行作用域
 
- $ show databases;  列举所有数据库
- $ use mysql; show tables; 列举名为mysql的数据库里所有的表
- $ create tabel tabelName; 创建表
- $ describe tableName; 查询tableName的所有字段信息
- $ select * from tableName 查询tableName里所有消息记录
- $ insert into tableName values('字段1的值','字段2的值','字段3的值')
+  每行命令都是以‘;’结尾，否则不会执行
+  show databases;  列举所有数据库
+  use mysql; show tables; 列举名为mysql的数据库里所有的表
+  create tabel tabelName; 创建表
+  describe tableName; 查询tableName的所有字段信息
+  select * from tableName 查询tableName里所有消息记录
+  insert into tableName values('字段1的值','字段2的值','字段3的值')
+  update tableName set attName='new value' where keyName='keyValue' 修改某属性
+  
 
  ## 解惑
 
